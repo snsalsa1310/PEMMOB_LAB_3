@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "792947401010",
+    "project_id": "labpemmob-anime-verse",
+    "storage_bucket": "labpemmob-anime-verse.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792947401010:android:6e3341a399c1e672a9772b",
+        "android_client_info": {
+          "package_name": "com.example.anime_verse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792947401010-9el0frggrkrj8fc50e7kfh4ih11n5kvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anime_verse",
+            "certificate_hash": "09cd4f079cf2387cf664c1baffcb99158544cef1"
+          }
+        },
+        {
+          "client_id": "792947401010-mgrtklgo2mmqg5q0jvj5o1sau420c2g5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anime_verse",
+            "certificate_hash": "436077588ca79c6daeb33464608b5e3ef6c301c3"
+          }
+        },
+        {
+          "client_id": "792947401010-ai7igv3g6iju5uuote6t4fa8q5nohg7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-EaGknPOquggK6bSpupmuVG2y3oxtENc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792947401010-ai7igv3g6iju5uuote6t4fa8q5nohg7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
