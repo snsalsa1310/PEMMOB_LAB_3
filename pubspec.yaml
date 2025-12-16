@@ -75,3 +75,7 @@ flutter_native_splash:
   android_12:
     color: "#FFFFFF"
     image: assets/images/splash_screen_icon.png
+
+env:
+  STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
+  KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
