@@ -7,7 +7,7 @@ on:
       - master
       - feature/manual-http-implementation
     tags:
-      - "v*"
+      - 'v*'
   workflow_dispatch:
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Accept Android SDK license
+      - name: Accept Android SDK licenses
         run: yes | sdkmanager --licenses || true
 
       - name: Install NDK
@@ -62,10 +62,10 @@ jobs:
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         run: |
           cat > android/key.properties << EOF
-          storePassword = $STORE_PASSWORD
-          keyPassword = $KEY_PASSWORD
-          keyAlias = $KEY_ALIAS
-          storeFile = upload-keystore.jks
+          storePassword=$STORE_PASSWORD
+          keyPassword=$KEY_PASSWORD
+          keyAlias=$KEY_ALIAS
+          storeFile=upload-keystore.jks
           EOF
 
       - name: Decode google-services.json
@@ -80,14 +80,14 @@ jobs:
       - name: Get Version
         id: get_version
         run: |
-          VERSION = $(grep '^version: ' pubspec.yaml | cut -d ' ' -f 2 | cut -d '+' -f 1)
+          VERSION=$(grep '^version: ' pubspec.yaml | cut -d ' ' -f 2 | cut -d '+' -f 1)
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: anime-verse-${{ steps.get_version.outputs.version }}
-          path: build/app/outputs/flutter-apl/app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
 
   release:
     name: Create GitHub Release
@@ -112,18 +112,18 @@ jobs:
           body: |
             ## Anime Verse v${{ needs.build.outputs.version }}
             
-            ### Download
-            Download the APK below and install on your Android device
+            ### 📱 Download
+            Download the APK below and install on your Android device.
             
-            ### What's New
+            ### ✨ What's New
             - Automated build via GitHub Actions
             - Release signed with production keystore
             
-            ### Security
+            ### 🔒 Security
             - Signed with release keystore
             - Firebase configured for production
             - Firestore security rules enabled
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
