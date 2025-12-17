@@ -65,7 +65,7 @@ jobs:
           storePassword = $STORE_PASSWORD
           keyPassword = $KEY_PASSWORD
           keyAlias = $KEY_ALIAS
-          storeFile = uploadKeystore.jks
+          storeFile = upload-keystore.jks
           EOF
 
       - name: Decode google-services.json
