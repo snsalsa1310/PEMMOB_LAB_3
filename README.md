@@ -19,8 +19,8 @@ judul, genre, gambar, dan deskripsi singkat dari setiap anime.
   <img src="assets/screenshots/img_4.png" width="25%" alt=""/>
   <img src="assets/screenshots/img_5.png" width="25%" alt=""/>
   <img src="assets/screenshots/img_6.png" width="25%" alt=""/>
-  <video width="315" height="560" controls>
-    <source src="assets/screenshots/video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 </div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MbZKrC74q8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# [Watch App Demo on Youtube](https://youtube.com/shorts/MbZKrC74q8Q)
