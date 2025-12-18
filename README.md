@@ -22,3 +22,5 @@ judul, genre, gambar, dan deskripsi singkat dari setiap anime.
 </div>
 
 # [Watch App Demo on Youtube](https://youtube.com/shorts/MbZKrC74q8Q)
+
+# [Firebase Screenshots](https://drive.google.com/drive/folders/1F_8xviC9yPnOP1WvgLzfSIp52nUbMIl0?usp=sharing)
